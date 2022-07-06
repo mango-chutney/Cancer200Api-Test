@@ -19,11 +19,9 @@ class MapImagery: NSObject, RCTBridgeModule {
   
   @objc func openMap() {
     DispatchQueue.main.async {
-      let navigationController = UINavigationController()
-      let mapViewController = MapViewController()
+      let navigationController = UINavigationController(rootViewController: MapViewController())
+      navigationController.modalPresentationStyle = .overFullScreen
       
-      navigationController.viewControllers = [mapViewController]
-
       let rootViewController = RCTPresentedViewController()
       
       rootViewController?.present(navigationController, animated: true, completion: nil)

@@ -33,17 +33,21 @@
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 			</dict>
-      <key>mapswim.net</key>
-      <dict>
-        <key>NSExceptionAllowsInsecureHTTPLoads</key>
-        <true/>
-        <key>NSIncludesSubdomains</key>
-        <true/>
-      </dict>
+			<key>mapswim.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location services 'Always' are required if you want to show your position on the map when the app is in background. Location services 'While Using the App' are required if you want to use the app to navigate using the dashboard or map.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location services 'Always' are required if you want to share your position on the map when the app is in background.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location services &apos;While Using the App&apos; are required if you want to use the app to navigate using the dashboard or map.</string>
+	<string>Location services 'While Using the App' are required if you want to use the app to navigate using the dashboard or map.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -55,6 +59,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -63,9 +69,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Location services &apos;Always&apos; are required if you want to show your position on the map when the app is in background. Location services &apos;While Using the App&apos; are required if you want to use the app to navigate using the dashboard or map.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Location services &apos;Always&apos; are required if you want to share your position on the map when the app is in background.</string>
 </dict>
 </plist>
