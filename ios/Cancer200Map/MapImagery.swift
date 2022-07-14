@@ -20,7 +20,7 @@ class MapImagery: NSObject, RCTBridgeModule {
   @objc func openMap() {
     DispatchQueue.main.async {
       let navigationController = UINavigationController(rootViewController: MapViewController())
-      navigationController.modalPresentationStyle = .overFullScreen
+      navigationController.modalPresentationStyle = .pageSheet
       
       let rootViewController = RCTPresentedViewController()
       
